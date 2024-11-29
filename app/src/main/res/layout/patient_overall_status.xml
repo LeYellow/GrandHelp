@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back_btn" />
+
+    <TextView
+        android:id="@+id/livestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="68dp"
+        android:text="Live Status"
+        android:textColor="#F16666" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="125dp"
+        android:src="@drawable/placeholder_user" />
+
+    <TextView
+        android:id="@+id/patient_name"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="327dp"
+        android:layout_marginEnd="154dp"
+        android:text="John Doe" />
+
+    <TextView
+        android:id="@+id/pulse_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="368dp"
+        android:text="Pulse"
+        android:textColor="#F16666" />
+
+    <TextView
+        android:id="@+id/pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="403dp"
+        android:text="pulse" />
+
+    <ImageView
+        android:id="@+id/pulse_graph"
+        android:layout_width="336dp"
+        android:layout_height="175dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="286dp"
+        app:srcCompat="@drawable/placeholder_pulse" />
+
+    <TextView
+        android:id="@+id/blood_pressure_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="632dp"
+        android:text="Blood Pressure"
+        android:textColor="#F16666" />
+
+    <TextView
+        android:id="@+id/blood_pressure_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="216dp"
+        android:text="bp1" />
+
+    <ImageView
+        android:id="@+id/blood_graph1"
+        android:layout_width="336dp"
+        android:layout_height="175dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        app:srcCompat="@drawable/placeholder_pulse" />
+
+</RelativeLayout>
