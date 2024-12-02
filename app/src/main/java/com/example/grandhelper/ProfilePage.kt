@@ -1,5 +1,6 @@
 package com.example.grandhelper
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -9,6 +10,7 @@ import androidx.activity.ComponentActivity
 class ProfilePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.profile_page)
 
         val val_first_name = "Johnny"

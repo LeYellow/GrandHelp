@@ -1,6 +1,7 @@
 package com.example.grandhelper
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
@@ -9,6 +10,7 @@ import androidx.activity.ComponentActivity
 class CaretakerHomePage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.caretaker_home_page)
 
         val userProfile: ImageView = findViewById(R.id.profile_pic)

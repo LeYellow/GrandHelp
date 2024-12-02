@@ -1,5 +1,6 @@
 package com.example.grandhelper
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.TextView
@@ -14,6 +15,7 @@ class PatientLiveStatus : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.patient_live_status)
 
         val tvPulse: TextView = findViewById(R.id.pulse)

@@ -2,6 +2,7 @@ package com.example.grandhelper
 
 import android.app.AlertDialog
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
@@ -13,6 +14,7 @@ import androidx.activity.ComponentActivity
 class CaretakerPatientPage : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.caretaker_patient_page)
 
         val userProfile: ImageView = findViewById(R.id.profile_pic)
