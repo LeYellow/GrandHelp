@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/background">
 
     <ImageButton
-        android:id="@+id/back_btn"
-        android:layout_width="20dp"
-        android:layout_height="30dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/back_btn" />
+    android:id="@+id/back_btn"
+    android:layout_width="20dp"
+    android:layout_height="30dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/back_btn" />
 
-    <TextView
-        android:id="@+id/livestatus"
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:gravity="center">
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="68dp"
-        android:text="Live Status"
-        android:textColor="#F16666" />
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overall"
+            android:textColor="#F3796E"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"/>
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView"
@@ -32,80 +48,76 @@
         android:layout_height="160dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="125dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
         android:src="@drawable/placeholder_user" />
 
     <TextView
         android:id="@+id/patient_name"
-        android:layout_width="89dp"
-        android:layout_height="39dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="327dp"
-        android:layout_marginEnd="154dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
         android:text="John Doe" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/pulse_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="368dp"
-        android:text="Pulse"
-        android:textColor="#F16666" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="30dp">
 
-    <TextView
-        android:id="@+id/pulse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="403dp"
-        android:text="pulse" />
+        <TextView
+            android:id="@+id/pulse_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Pulse"
+            android:textColor="#F16666" />
 
-    <ImageView
-        android:id="@+id/pulse_graph"
-        android:layout_width="336dp"
-        android:layout_height="175dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="286dp"
-        app:srcCompat="@drawable/placeholder_pulse" />
+        <TextView
+            android:id="@+id/pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="pulse" />
 
-    <TextView
-        android:id="@+id/blood_pressure_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="632dp"
-        android:text="Blood Pressure"
-        android:textColor="#F16666" />
+        <ImageView
+            android:id="@+id/pulse_graph"
+            android:layout_width="336dp"
+            android:layout_height="175dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/placeholder_pulse" />
 
-    <TextView
-        android:id="@+id/blood_pressure_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="216dp"
-        android:text="bp1" />
+        <TextView
+            android:id="@+id/blood_pressure_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Blood Pressure"
+            android:textColor="#F16666" />
 
-    <ImageView
-        android:id="@+id/blood_graph1"
-        android:layout_width="336dp"
-        android:layout_height="175dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="30dp"
-        app:srcCompat="@drawable/placeholder_pulse" />
+        <TextView
+            android:id="@+id/blood_pressure_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:text="bp1" />
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/blood_graph1"
+            android:layout_width="336dp"
+            android:layout_height="175dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/placeholder_pulse" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,102 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/background">
 
-    <TextView
-        android:id="@+id/livestatus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="166dp"
-        android:layout_marginTop="68dp"
-        android:text="GrandHelp"
-        android:textColor="#F16666" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="300dp"
+        android:gravity="center">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="125dp"
-        android:src="@drawable/placeholder_user" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-    <TextView
-        android:id="@+id/patient_name"
-        android:layout_width="89dp"
-        android:layout_height="39dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="327dp"
-        android:layout_marginEnd="154dp"
-        android:text="John Doe" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grand"
+                android:textColor="#F3796E"
+                android:textSize="40dp"/>
 
-    <ImageButton
-        android:id="@+id/live_status"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="400dp"
-        android:src="@drawable/live_status"
-        android:background="#B7D8D6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textColor="@android:color/white"
+                android:textSize="40dp"/>
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/live_status_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="76dp"
-        android:layout_marginBottom="315dp"
-        android:text="Live Status" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/placeholder_user" />
 
-    <ImageButton
-        android:id="@+id/overall_status"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="400dp"
-        android:src="@drawable/overall_status"
-        android:background="#B7D8D6" />
+        <TextView
+            android:id="@+id/patient_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="John Doe" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/overall_status_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="258dp"
-        android:layout_marginBottom="315dp"
-        android:text="Overall Status" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
 
-    <ImageButton
-        android:id="@+id/contact_caretaker"
-        android:layout_width="350dp"
-        android:layout_height="160dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="600dp"
-        android:src="@drawable/contact"
-        android:background="#B7D8D6" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:gravity="center">
 
-    <TextView
-        android:id="@+id/contact_caretaker_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="149dp"
-        android:layout_marginBottom="110dp"
-        android:text="Contact Caretaker" />
+            <ImageButton
+                android:id="@+id/live_status"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/live_status"
+                android:background="#B7D8D6" />
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/live_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:text="Live Status" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:layout_marginStart="30dp">
+
+            <ImageButton
+                android:id="@+id/overall_status"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/overall_status"
+                android:background="#B7D8D6" />
+
+            <TextView
+                android:id="@+id/overall_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:text="Overall Status" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/contact_caretaker"
+            android:layout_width="350dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/contact"
+            android:background="#B7D8D6" />
+
+        <TextView
+            android:id="@+id/contact_caretaker_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:text="Contact Caretaker" />
+    </LinearLayout>
+
+</LinearLayout>
