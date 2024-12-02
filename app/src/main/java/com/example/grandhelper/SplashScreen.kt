@@ -6,13 +6,13 @@ import android.os.Looper
 import androidx.activity.ComponentActivity
 
 
-class SplashActivity : ComponentActivity() {
+class SplashScreen : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
+        setContentView(R.layout.splash_screen)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, UserPage::class.java))
+            startActivity(Intent(this, LoginPage::class.java))
             finish()
         }, 3000) // 3 seconds
     }

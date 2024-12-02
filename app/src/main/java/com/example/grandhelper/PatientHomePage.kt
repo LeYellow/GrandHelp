@@ -6,21 +6,22 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 
-class UserPage : ComponentActivity() {
+class PatientHomePage : ComponentActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.patient_home_page)
 
             val btnLiveStatus: ImageButton = findViewById(R.id.live_status)
             btnLiveStatus.setOnClickListener {
-                startActivity(Intent(this, UserLiveStatus::class.java))
+                startActivity(Intent(this, PatientLiveStatus::class.java))
             }
 
             val btnOverallStatus: ImageButton = findViewById(R.id.overall_status)
             btnOverallStatus.setOnClickListener {
-                startActivity(Intent(this, UserOverallStatus::class.java))
+                startActivity(Intent(this, PatientOverallStatus::class.java))
             }
 
             val btnContact: ImageButton = findViewById(R.id.contact_caretaker)
@@ -59,6 +60,9 @@ class UserPage : ComponentActivity() {
         closePopup.setOnClickListener {
             dialog.dismiss()
         }
+
+        val popupText: TextView = dialogView.findViewById(R.id.popup_text)
+        popupText.text = "Do you want to call or message the caretaker?"
 
         dialog.show()
         val window = dialog.window

@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.activity.ComponentActivity
 
 
-class UserLiveStatus : ComponentActivity() {
+class PatientLiveStatus : ComponentActivity() {
 
     private var pulse = 90
     private var systolicPressure = 110

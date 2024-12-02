@@ -12,16 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GrandHelper"
         tools:targetApi="31">
-        <activity android:name=".UserLiveStatus" />
-        <activity android:name=".UserOverallStatus" />
-        <activity android:name=".SplashActivity"
+        <activity android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UserPage" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".RegisterPage" />
+        <activity android:name=".PatientHomePage" />
+        <activity android:name=".PatientLiveStatus" />
+        <activity android:name=".PatientOverallStatus" />
+        <activity android:name=".CaretakerHomePage" />
+        <activity android:name=".CaretakerPatientPage" />
+        <activity android:name=".ProfilePage" />
+        <activity android:name=".LocationPage" />
     </application>
 
 </manifest>
