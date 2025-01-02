@@ -77,8 +77,8 @@
             android:id="@+id/pulse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="pulse" />
+            android:textSize="25dp"
+            android:text="checking..." />
 
         <TextView
             android:id="@+id/blood_pressure_text"
@@ -93,14 +93,8 @@
             android:id="@+id/blood_pressure_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="bp1" />
+            android:textSize="25dp"
+            android:text="checking..." />
 
-        <TextView
-            android:id="@+id/blood_pressure_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="bp2" />
     </LinearLayout>
 </LinearLayout>
