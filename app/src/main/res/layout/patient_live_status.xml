@@ -96,5 +96,12 @@
             android:textSize="25dp"
             android:text="checking..." />
 
+        <TextView
+            android:id="@+id/blood_pressure_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="checking..." />
+
     </LinearLayout>
 </LinearLayout>
