@@ -2,16 +2,17 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
     namespace = "com.example.grandhelper"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.grandhelper"
         minSdk = 24
-        targetSdk = 34
+//        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -36,7 +37,9 @@ android {
     }
     buildFeatures {
         compose = true
+        viewBinding = true
     }
+    buildToolsVersion = "36.0.0 rc1"
 }
 
 dependencies {
@@ -51,6 +54,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -58,5 +62,5 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("androidx.core:core-splashscreen:1.0.1")
+//    implementation("androidx.core:core-splashscreen:1.0.1")
 }
