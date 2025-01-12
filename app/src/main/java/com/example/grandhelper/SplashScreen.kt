@@ -16,6 +16,6 @@ class SplashScreen : ComponentActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             startActivity(Intent(this, LoginPage::class.java))
             finish()
-        }, 3000) // 3 seconds
+        }, 2000) // 2 seconds
     }
 }
